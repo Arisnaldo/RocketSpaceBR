@@ -42,16 +42,19 @@ public class Inicio extends javax.swing.JFrame {
         kGradientPanel1.setkStartColor(new java.awt.Color(0, 51, 0));
 
         rSButtonRiple1.setBackground(new java.awt.Color(0, 102, 0));
+        rSButtonRiple1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/iconfinder_user-add_216490.png"))); // NOI18N
         rSButtonRiple1.setText("Cadastrar Aluno");
         rSButtonRiple1.setColorHover(new java.awt.Color(51, 51, 51));
 
         rSButtonRiple2.setBackground(new java.awt.Color(0, 102, 0));
+        rSButtonRiple2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/iconfinder_11_Search_106236.png"))); // NOI18N
         rSButtonRiple2.setText("Pesquisar Aluno");
         rSButtonRiple2.setColorHover(new java.awt.Color(51, 51, 51));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_130-man-student-2_3099383.png"))); // NOI18N
 
         rSButtonRiple3.setBackground(new java.awt.Color(0, 102, 0));
+        rSButtonRiple3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/iconfinder_icons_exit_1564505.png"))); // NOI18N
         rSButtonRiple3.setText("Sair");
         rSButtonRiple3.setColorHover(new java.awt.Color(51, 51, 51));
 
@@ -63,14 +66,14 @@ public class Inicio extends javax.swing.JFrame {
                 .addContainerGap(166, Short.MAX_VALUE)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(190, 190, 190))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
                         .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(rSButtonRiple2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rSButtonRiple1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rSButtonRiple3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(143, 143, 143))))
+                        .addGap(143, 143, 143))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(179, 179, 179))))
         );
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
