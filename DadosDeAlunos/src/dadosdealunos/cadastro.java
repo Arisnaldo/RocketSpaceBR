@@ -90,6 +90,7 @@ public class cadastro extends javax.swing.JFrame {
             }
         });
 
+        rSButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/iconfinder_icons_exit_1564505.png"))); // NOI18N
         rSButton3.setText("APAGAR");
         rSButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

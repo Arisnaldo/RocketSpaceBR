@@ -195,6 +195,9 @@
             </Component>
             <Component class="rojeru_san.RSButton" name="rSButton3">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/imagens/icones/iconfinder_icons_exit_1564505.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="APAGAR"/>
               </Properties>
               <Events>
