@@ -40,6 +40,7 @@ public class cadastro extends javax.swing.JFrame {
         rSMTextFull4 = new rojeru_san.RSMTextFull();
         rSMTextFull5 = new rojeru_san.RSMTextFull();
         rSMPassView1 = new rojeru_san.RSMPassView();
+        rSButtonGradiente1 = new rsbuttongradiente.RSButtonGradiente();
         jLabel1 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
@@ -111,6 +112,17 @@ public class cadastro extends javax.swing.JFrame {
 
         rSMPassView1.setText("rSMPassView1");
 
+        rSButtonGradiente1.setBackground(new java.awt.Color(51, 102, 0));
+        rSButtonGradiente1.setForeground(new java.awt.Color(0, 51, 0));
+        rSButtonGradiente1.setText("CADASTRO DE ESCOLA");
+        rSButtonGradiente1.setColorPrimario(new java.awt.Color(51, 153, 0));
+        rSButtonGradiente1.setColorPrimarioHover(new java.awt.Color(0, 153, 51));
+        rSButtonGradiente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSButtonGradiente1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout rSPanelGradiente2Layout = new javax.swing.GroupLayout(rSPanelGradiente2);
         rSPanelGradiente2.setLayout(rSPanelGradiente2Layout);
         rSPanelGradiente2Layout.setHorizontalGroup(
@@ -125,20 +137,23 @@ public class cadastro extends javax.swing.JFrame {
                             .addComponent(rSMTextFull3, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rSMPassView1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rSMTextFull4, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rSMTextFull5, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(rSMTextFull5, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(rSButtonGradiente1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(rSPanelGradiente2Layout.createSequentialGroup()
                         .addGap(69, 69, 69)
-                        .addGroup(rSPanelGradiente2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rSButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelGradiente2Layout.createSequentialGroup()
-                                .addComponent(rSButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(19, 19, 19)))))
+                        .addComponent(rSButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelGradiente2Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(rSButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(35, 35, 35)))
                 .addContainerGap(35, Short.MAX_VALUE))
         );
         rSPanelGradiente2Layout.setVerticalGroup(
             rSPanelGradiente2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelGradiente2Layout.createSequentialGroup()
-                .addGap(55, 55, 55)
+                .addGap(9, 9, 9)
+                .addComponent(rSButtonGradiente1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rSMTextFull1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(rSMTextFull2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -157,6 +172,7 @@ public class cadastro extends javax.swing.JFrame {
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/school (1).png"))); // NOI18N
 
         javax.swing.GroupLayout kGradientPanel3Layout = new javax.swing.GroupLayout(kGradientPanel3);
@@ -164,21 +180,21 @@ public class cadastro extends javax.swing.JFrame {
         kGradientPanel3Layout.setHorizontalGroup(
             kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel3Layout.createSequentialGroup()
-                .addGap(63, 63, 63)
+                .addGap(46, 46, 46)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 84, Short.MAX_VALUE)
                 .addComponent(rSPanelGradiente2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         kGradientPanel3Layout.setVerticalGroup(
             kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(kGradientPanel3Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(rSPanelGradiente2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(kGradientPanel3Layout.createSequentialGroup()
-                        .addGap(173, 173, 173)
+                        .addGap(52, 52, 52)
                         .addComponent(jLabel1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -206,6 +222,10 @@ public class cadastro extends javax.swing.JFrame {
     private void rSButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rSButton3ActionPerformed
+
+    private void rSButtonGradiente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonGradiente1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSButtonGradiente1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -249,6 +269,7 @@ public class cadastro extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kGradientPanel3;
     private rojeru_san.RSButton rSButton3;
     private rojeru_san.RSButton rSButton4;
+    private rsbuttongradiente.RSButtonGradiente rSButtonGradiente1;
     private rojeru_san.RSMPassView rSMPassView1;
     private rojeru_san.RSMTextFull rSMTextFull1;
     private rojeru_san.RSMTextFull rSMTextFull2;
