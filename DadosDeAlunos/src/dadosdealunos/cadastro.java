@@ -40,6 +40,7 @@ public class cadastro extends javax.swing.JFrame {
         rSMTextFull4 = new rojeru_san.RSMTextFull();
         rSMTextFull5 = new rojeru_san.RSMTextFull();
         rSMPassView1 = new rojeru_san.RSMPassView();
+        rSButtonRiple1 = new rojeru_san.RSButtonRiple();
         jLabel1 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
@@ -78,21 +79,25 @@ public class cadastro extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         kGradientPanel3.setkEndColor(new java.awt.Color(204, 0, 0));
-        kGradientPanel3.setkStartColor(new java.awt.Color(255, 204, 153));
+        kGradientPanel3.setkStartColor(new java.awt.Color(0, 102, 153));
 
-        rSPanelGradiente2.setColorPrimario(new java.awt.Color(0, 102, 0));
+        rSPanelGradiente2.setColorPrimario(new java.awt.Color(255, 51, 0));
         rSPanelGradiente2.setColorSecundario(new java.awt.Color(0, 0, 51));
 
+        rSButton4.setBackground(new java.awt.Color(0, 102, 102));
         rSButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/iconfinder_user-add_216490.png"))); // NOI18N
         rSButton4.setText("CADASTRAR");
+        rSButton4.setColorHover(new java.awt.Color(255, 51, 0));
         rSButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSButton4ActionPerformed(evt);
             }
         });
 
+        rSButton3.setBackground(new java.awt.Color(0, 102, 102));
         rSButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/iconfinder_icons_exit_1564505.png"))); // NOI18N
         rSButton3.setText("APAGAR");
+        rSButton3.setColorHover(new java.awt.Color(255, 51, 0));
         rSButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSButton3ActionPerformed(evt);
@@ -116,34 +121,42 @@ public class cadastro extends javax.swing.JFrame {
 
         rSMPassView1.setPlaceholder("Senha");
 
+        rSButtonRiple1.setBackground(new java.awt.Color(0, 102, 102));
+        rSButtonRiple1.setForeground(new java.awt.Color(0, 0, 0));
+        rSButtonRiple1.setText("CADASTRO DE ESCOLA");
+        rSButtonRiple1.setColorHover(new java.awt.Color(255, 51, 0));
+        rSButtonRiple1.setColorTextHover(new java.awt.Color(51, 51, 51));
+
         javax.swing.GroupLayout rSPanelGradiente2Layout = new javax.swing.GroupLayout(rSPanelGradiente2);
         rSPanelGradiente2.setLayout(rSPanelGradiente2Layout);
         rSPanelGradiente2Layout.setHorizontalGroup(
             rSPanelGradiente2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelGradiente2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(rSButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelGradiente2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(rSButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(61, 61, 61))
             .addGroup(rSPanelGradiente2Layout.createSequentialGroup()
+                .addGap(34, 34, 34)
                 .addGroup(rSPanelGradiente2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(rSPanelGradiente2Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(rSPanelGradiente2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rSMTextFull2, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rSMTextFull1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rSMTextFull3, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rSMPassView1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rSMTextFull4, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(rSMTextFull5, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(rSPanelGradiente2Layout.createSequentialGroup()
-                        .addGap(69, 69, 69)
-                        .addGroup(rSPanelGradiente2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(rSButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelGradiente2Layout.createSequentialGroup()
-                                .addComponent(rSButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)))))
+                    .addComponent(rSButtonRiple1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMTextFull2, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMTextFull1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMTextFull3, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMPassView1, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMTextFull4, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMTextFull5, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(35, Short.MAX_VALUE))
         );
         rSPanelGradiente2Layout.setVerticalGroup(
             rSPanelGradiente2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelGradiente2Layout.createSequentialGroup()
-                .addGap(31, 31, 31)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(rSButtonRiple1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rSMTextFull1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(rSMTextFull2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -157,9 +170,9 @@ public class cadastro extends javax.swing.JFrame {
                 .addComponent(rSMTextFull5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(rSButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(rSButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addGap(22, 22, 22))
         );
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
@@ -196,7 +209,7 @@ public class cadastro extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(kGradientPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 137, Short.MAX_VALUE))
+                .addGap(0, 132, Short.MAX_VALUE))
         );
 
         pack();
@@ -260,6 +273,7 @@ public class cadastro extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kGradientPanel3;
     private rojeru_san.RSButton rSButton3;
     private rojeru_san.RSButton rSButton4;
+    private rojeru_san.RSButtonRiple rSButtonRiple1;
     private rojeru_san.RSMPassView rSMPassView1;
     private rojeru_san.RSMTextFull rSMTextFull1;
     private rojeru_san.RSMTextFull rSMTextFull2;
