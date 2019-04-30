@@ -48,35 +48,40 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
         rSPanelGradiente1.setColorPrimario(new java.awt.Color(0, 204, 204));
         rSPanelGradiente1.setColorSecundario(new java.awt.Color(0, 102, 102));
 
-        rSMTextFull1.setText("NOME DO ALUNO");
+        rSMTextFull1.setPlaceholder("NOME DO ALUNO");
+        rSMTextFull1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSMTextFull1ActionPerformed(evt);
+            }
+        });
 
-        rSMTextFull2.setText("IDADE");
+        rSMTextFull2.setPlaceholder("IDADE");
 
-        rSMTextFull3.setText("SERIE");
+        rSMTextFull3.setPlaceholder("SÉRIE");
         rSMTextFull3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSMTextFull3ActionPerformed(evt);
             }
         });
 
-        rSMTextFull4.setText("ENDEREÇO");
+        rSMTextFull4.setPlaceholder("ENDEREÇO");
 
-        rSMTextFull5.setText("NACIONALIDADE");
+        rSMTextFull5.setPlaceholder("NACIONALIDADE");
 
-        rSMTextFull6.setText("EMAIL");
+        rSMTextFull6.setPlaceholder("EMAIL");
 
-        rSMTextFull7.setText("TELEFONE");
+        rSMTextFull7.setPlaceholder("TELEFONE");
         rSMTextFull7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSMTextFull7ActionPerformed(evt);
             }
         });
 
-        rSMTextFull8.setText("NOME DA MÃE");
+        rSMTextFull8.setPlaceholder("NOME DA MÃE");
 
-        rSMTextFull9.setText("NOME DO PAI");
+        rSMTextFull9.setPlaceholder("NOME DO PAI");
 
-        rSMTextFull10.setText("N°");
+        rSMTextFull10.setPlaceholder("Nº");
 
         rSButtonRiple1.setBackground(new java.awt.Color(0, 102, 102));
         rSButtonRiple1.setText("CADASTRAR");
@@ -129,29 +134,26 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
         rSPanelGradiente1Layout.setVerticalGroup(
             rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(rSPanelGradiente1Layout.createSequentialGroup()
-                .addGap(86, 86, 86)
-                .addComponent(rSMTextFull1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(rSPanelGradiente1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(rSMTextFull2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(rSPanelGradiente1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rSMTextFull3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rSMTextFull4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rSMTextFull10, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(77, 77, 77)
+                .addComponent(rSMTextFull1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rSMTextFull5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rSMTextFull7, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(rSMTextFull3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMTextFull2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(rSMTextFull4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(rSMTextFull10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(rSMTextFull7, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(rSMTextFull5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(rSMTextFull6, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rSMTextFull8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(rSMTextFull9, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rSMTextFull9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rSButtonRiple1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -183,6 +185,10 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
     private void rSMTextFull7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMTextFull7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rSMTextFull7ActionPerformed
+
+    private void rSMTextFull1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMTextFull1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSMTextFull1ActionPerformed
 
     /**
      * @param args the command line arguments
