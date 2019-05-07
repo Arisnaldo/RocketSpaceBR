@@ -67,7 +67,7 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
 
         rSMTextFull4.setPlaceholder("ENDEREÇO");
 
-        rSMTextFull5.setPlaceholder("NACIONALIDADE");
+        rSMTextFull5.setPlaceholder("NATURALIDADE");
 
         rSMTextFull6.setPlaceholder("EMAIL");
 
