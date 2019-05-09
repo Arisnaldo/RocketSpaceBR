@@ -34,6 +34,7 @@ public class Inicio extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         rSButtonRiple3 = new rojeru_san.RSButtonRiple();
         rSButtonRiple4 = new rojeru_san.RSButtonRiple();
+        jLabel2 = new javax.swing.JLabel();
 
         jToggleButton1.setText("jToggleButton1");
 
@@ -60,8 +61,11 @@ public class Inicio extends javax.swing.JFrame {
         rSButtonRiple3.setColorHover(new java.awt.Color(51, 51, 51));
 
         rSButtonRiple4.setBackground(new java.awt.Color(0, 102, 0));
+        rSButtonRiple4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icones/iconfinder_refresh_134221.png"))); // NOI18N
         rSButtonRiple4.setText("Alterar Dados");
         rSButtonRiple4.setColorHover(new java.awt.Color(51, 51, 51));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/iconfinder_Moon_1715799.png"))); // NOI18N
 
         javax.swing.GroupLayout kGradientPanel1Layout = new javax.swing.GroupLayout(kGradientPanel1);
         kGradientPanel1.setLayout(kGradientPanel1Layout);
@@ -81,11 +85,15 @@ public class Inicio extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(180, 180, 180))
+            .addGroup(kGradientPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel2)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
-                .addContainerGap(76, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(128, 128, 128)
                 .addGroup(kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -108,7 +116,7 @@ public class Inicio extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(kGradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 512, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -151,6 +159,7 @@ public class Inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JToggleButton jToggleButton1;
     private keeptoo.KGradientPanel kGradientPanel1;
     private rojeru_san.RSButtonRiple rSButtonRiple1;
