@@ -7,9 +7,6 @@
       <Color blue="66" green="66" red="0" type="rgb"/>
     </Property>
     <Property name="extendedState" type="int" value="6"/>
-    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="null"/>
-    </Property>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="null"/>
     </Property>
@@ -103,7 +100,7 @@
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="rSMTextFull1" min="-2" pref="505" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="rSMTextFull2" min="-2" pref="129" max="-2" attributes="0"/>
@@ -136,10 +133,10 @@
                               <Component id="rSMTextFull2" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="rSMTextFull3" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="rSMTextFull11" min="-2" max="-2" attributes="0"/>
-                              <Component id="rSComboMetro1" min="-2" pref="42" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="rSMTextFull11" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="rSComboMetro1" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="jPanel1" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -174,7 +171,7 @@
       <SubComponents>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull1">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="NOME DO ALUNO"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rSMTextFull1ActionPerformed"/>
@@ -182,12 +179,12 @@
         </Component>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull2">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="IDADE"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull3">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="S&#xc9;RIE"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rSMTextFull3ActionPerformed"/>
@@ -195,22 +192,22 @@
         </Component>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull4">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="ENDERE&#xc7;O"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull5">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="NATURALIDADE"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull6">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="EMAIL"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull7">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="TELEFONE"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rSMTextFull7ActionPerformed"/>
@@ -218,17 +215,17 @@
         </Component>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull8">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="NOME DA M&#xc3;E"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull9">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="NOME DO PAI"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull10">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="N&#xba;"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="rojeru_san.RSButtonRiple" name="rSButtonRiple1">
@@ -284,7 +281,7 @@
         </Container>
         <Component class="rojeru_san.RSMTextFull" name="rSMTextFull11">
           <Properties>
-            <Property name="placeholder" type="java.lang.String" value="CIDADE"/>
+            <Property name="placeholder" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="rojerusan.RSComboMetro" name="rSComboMetro1">

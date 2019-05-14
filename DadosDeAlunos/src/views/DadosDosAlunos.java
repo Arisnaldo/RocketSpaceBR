@@ -9,12 +9,12 @@ package views;
  *
  * @author natalino
  */
-public class CadastroDeAlunos extends javax.swing.JFrame {
+public class DadosDosAlunos extends javax.swing.JFrame {
 
     /**
      * Creates new form CadastroDeAlunos
      */
-    public CadastroDeAlunos() {
+    public DadosDosAlunos() {
         initComponents();
     }
 
@@ -48,7 +48,6 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 102, 102));
         setExtendedState(6);
-        setMaximumSize(null);
         setMinimumSize(null);
         setResizable(false);
 
@@ -58,40 +57,40 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
         rSPanelGradiente1.setMinimumSize(new java.awt.Dimension(800, 600));
         rSPanelGradiente1.setPreferredSize(new java.awt.Dimension(800, 600));
 
-        rSMTextFull1.setPlaceholder("NOME DO ALUNO");
+        rSMTextFull1.setPlaceholder("");
         rSMTextFull1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSMTextFull1ActionPerformed(evt);
             }
         });
 
-        rSMTextFull2.setPlaceholder("IDADE");
+        rSMTextFull2.setPlaceholder("");
 
-        rSMTextFull3.setPlaceholder("SÉRIE");
+        rSMTextFull3.setPlaceholder("");
         rSMTextFull3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSMTextFull3ActionPerformed(evt);
             }
         });
 
-        rSMTextFull4.setPlaceholder("ENDEREÇO");
+        rSMTextFull4.setPlaceholder("");
 
-        rSMTextFull5.setPlaceholder("NATURALIDADE");
+        rSMTextFull5.setPlaceholder("");
 
-        rSMTextFull6.setPlaceholder("EMAIL");
+        rSMTextFull6.setPlaceholder("");
 
-        rSMTextFull7.setPlaceholder("TELEFONE");
+        rSMTextFull7.setPlaceholder("");
         rSMTextFull7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rSMTextFull7ActionPerformed(evt);
             }
         });
 
-        rSMTextFull8.setPlaceholder("NOME DA MÃE");
+        rSMTextFull8.setPlaceholder("");
 
-        rSMTextFull9.setPlaceholder("NOME DO PAI");
+        rSMTextFull9.setPlaceholder("");
 
-        rSMTextFull10.setPlaceholder("Nº");
+        rSMTextFull10.setPlaceholder("");
 
         rSButtonRiple1.setBackground(new java.awt.Color(0, 102, 102));
         rSButtonRiple1.setText("CADASTRAR");
@@ -121,7 +120,7 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
             .addGap(0, 141, Short.MAX_VALUE)
         );
 
-        rSMTextFull11.setPlaceholder("CIDADE");
+        rSMTextFull11.setPlaceholder("");
 
         rSComboMetro1.setForeground(new java.awt.Color(0, 112, 192));
         rSComboMetro1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "SEXO", "MASCULINO", "FEMININO" }));
@@ -167,7 +166,7 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
                                         .addComponent(rSMTextFull10, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(rSPanelGradiente1Layout.createSequentialGroup()
-                        .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(rSMTextFull1, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(rSPanelGradiente1Layout.createSequentialGroup()
                                 .addComponent(rSMTextFull2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -192,8 +191,8 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
                         .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(rSMTextFull2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rSMTextFull3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(17, 17, 17)
+                        .addGroup(rSPanelGradiente1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(rSMTextFull11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(rSComboMetro1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -270,20 +269,21 @@ public class CadastroDeAlunos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CadastroDeAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosDosAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CadastroDeAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosDosAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CadastroDeAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosDosAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CadastroDeAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DadosDosAlunos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroDeAlunos().setVisible(true);
+                new DadosDosAlunos().setVisible(true);
             }
         });
     }
